@@ -1,0 +1,64 @@
+.introduction {
+  background: url("../../assets/Aesop_Bar_Soaps_2023_Web_Homepage_2_Primary_Full_Bleed_Desktop_2880x1044px.avif")
+    no-repeat center;
+  background-size: cover;
+  height: 717px;
+  color: #fffef2;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  margin-top: 0;
+}
+
+.brand-details {
+  max-width: 376px;
+}
+
+.brands-name {
+  height: 315px;
+  margin-right: 48px;
+  font-weight: normal;
+  margin-top: 0;
+  font-size: 32px;
+}
+.cta {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 23px;
+  background-color: transparent;
+  border: 1px solid #fffef2;
+  color: #fffef2;
+  margin-top: 30px;
+  fill: #fffef2;
+  font-size: 14px;
+}
+
+.cta:hover {
+  background-color: #fffef2;
+  color: #333;
+  cursor: pointer;
+  fill: #333;
+}
+
+.cta-text {
+  margin-right: 24px;
+}
+
+.tagline {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+
+
+.warm-up{
+  display: flex;
+  justify-content: space-between;
+}
+
+.warm-up-rhs{
+  width: 60%;
+  height: 50vh;
+  background-size: cover;
+  background:url("../../assets/warmup.jpg") no-repeat center;
+}

@@ -1,0 +1,14 @@
+.soaps-carousel{
+  max-width: 1366px;
+  margin-left: auto;
+}
+.nurture-soap-container > img,
+.polish-soap-container > img,
+.refresh-soap-container > img {
+  width: 420px;
+}
+
+.nurture-soap-container, .polish-soap-container, .refresh-soap-container{
+  display: block;
+  width: fit-content;
+}

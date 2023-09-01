@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&family=Marcellus&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.mini-heading {
+  margin-bottom: 5px;
+}
+
+.sections-tagline{
+  font-family: "Marcellus", serif;
+  font-size: 28px;
+  font-weight: normal;
+  margin-top: 0;
+  color: #333;
+}
+
+.sections-description{
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.section-details {
+  max-width: 400px;
+  padding: 40px;
+}
+
+section{
+  margin-top: 150px;
+}
+
+.sub-cta{
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 23px;
+  background-color: transparent;
+  border: 1px solid #33333333;
+  color: #333;
+  margin-top: 30px;
+  fill: #333;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sub-cta:hover{
+  background-color: #333;
+  color: #fffef2;
+  fill: #fffef2;
+}
+
+.sections-cta{
+  display: flex;
+  text-decoration: none;
+  font-size: 15px;
+  color: #333;
+}
+
+
+.attention-carousel-item{
+  width: 420px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
