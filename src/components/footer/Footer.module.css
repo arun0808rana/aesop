@@ -1,0 +1,165 @@
+.footer-top {
+  background-color: #252525;
+  color: #fffef2;
+  padding: 40px 34px;
+  display: flex;
+}
+
+.email-container {
+  max-width: calc(33% - 35px);
+  margin-right: 35px;
+}
+.email-box {
+  position: relative;
+  width: 100%;
+  fill: #fffef2;
+  color: #fffef2;
+}
+
+.email-heading {
+  font-size: 0.9375rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+}
+.email-box > input {
+  width: 100%;
+  height: 37px;
+  border: 1px solid #fffef2;
+  background-color: transparent;
+  border-radius: 3px 0 0 3px;
+  padding: 1px 2px 1px 10px;
+  color: inherit;
+  font-size: 1.0625rem;
+}
+
+.email-box-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  fill: #fffef2;
+  color: #fffef2;
+}
+
+.email-box-icon > img {
+  position: relative;
+}
+
+.site-links-upper-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.site-link-container {
+  max-width: calc(33% - 35px);
+  width: 100%;
+  min-width: 240px;
+  margin-right: 35px;
+}
+.site-link {
+  display: flex;
+  color: inherit;
+  padding: 8px 0;
+}
+
+.site-links-lower-section {
+  display: flex;
+  margin-top: 35px;
+}
+
+.sustainability-excerpt {
+  margin-right: 35px;
+  margin-top: 35px;
+}
+
+.site-link > img {
+  padding-left: 4px;
+}
+
+.footer-base {
+  background-color: #252525;
+  height: 72px;
+  border-top: 2px solid #fffef2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fffef2;
+  fill: #fffef2;
+  padding-left: 45px;
+}
+
+.social-icon-container{
+    margin-right: 45px;
+    display: block;
+}
+
+.footer-socials{
+    display: flex;
+}
+
+.footer-chat{
+    position: relative;
+}
+
+.footer-chat > img{
+    position: absolute;
+    right: 16px;
+    top: -60px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    cursor: pointer;
+}
+
+/*  Media Queries  */
+
+@media screen and (max-width: 1024px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .email-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sustainability-excerpt {
+    max-width: 30%;
+    margin-top: 0;
+  }
+
+  .site-links {
+    margin-top: 35px;
+  }
+
+  .site-link-container:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .footer-base{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .site-links {
+    width: 100%;
+  }
+
+  .footer-socials{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .site-link-container:nth-child(3) {
+    margin-top: 0;
+  }
+}
+
+
+@media  (min-width: 1024px) and (max-width: 1314px) {
+    .site-link-container:nth-child(3) {
+      margin-top: 35px;
+    }
+  }
+  

@@ -4,8 +4,13 @@ import styles from "./Home.module.css";
 import ArrowRightIcon from "../../assets/arrow-right.svg";
 import { Soaps } from "./components/soaps/Soaps";
 import { SubCta } from "../../components/subCta/SubCta";
-import WarmUpBanner from '../../assets/warmup.jpg';
+
 import { AttentionCarousel } from "./components/attentionCarousel/AttentionCarousel";
+import { Domestic } from "./components/domestic/Domestic";
+import { Sustainablility } from "./components/sustainablility/Sustainablility";
+import { StoreLocator } from "./components/storeLocator/StoreLocator";
+import { Quote } from "./components/quote/Quote";
+import { Footer } from "../../components/footer/Footer";
 
 export default function Home() {
   return (
@@ -41,40 +46,68 @@ export default function Home() {
 
       <section className={styles["soaps-container"]}>
         <div className="section-details">
-          <div className="mini-heading">For the body</div>
-          <h2 className="sections-tagline">An expression of care</h2>
-          <div className="sections-description">
-            Aesop formulations offer the body deserving care, to cleanse,
-            replenish, and nourish skin. Each product is a sensory pleasure to
-            use with its own delightful aroma.
+          <div className="section-details-flexbox">
+            <div className="section-details-lhs">
+              <div className="mini-heading">For the body</div>
+              <h2 className="sections-tagline">An expression of care</h2>
+            </div>
+            <div className={styles["section-details-rhs"]}>
+              <div className="sections-description">
+                Aesop formulations offer the body deserving care, to cleanse,
+                replenish, and nourish skin. Each product is a sensory pleasure
+                to use with its own delightful aroma.
+              </div>
+              <a href="" className="sections-cta">
+                <div className="soaps-text">See all Body Care</div>
+                <img src={ArrowRightIcon} alt="" className="soaps-cta-icon" />
+              </a>
+            </div>
           </div>
-          <a href="" className="sections-cta">
-            <div className="soaps-text">See all Body Care</div>
-            <img src={ArrowRightIcon} alt="" className="soaps-cta-icon" />
-          </a>
         </div>
         <Soaps />
       </section>
 
       <section className={styles["warm-up"]}>
-        <div className="section-details">
+        <div className={styles["warm-up-details"] + " section-details"}>
           <div className="mini-heading">The Athenaeum</div>
           <h2 className="sections-tagline">The warm-up </h2>
           <div className="sections-description">
             In The Athenaeum, our digital reading room: a guide to ensuring a
             healthy complexion through the warmer months.
           </div>
-          <SubCta subCtaText={"Read More"}/>
+          <SubCta subCtaText={"Read More"} />
         </div>
-        <div className={styles["warm-up-rhs"]}>
+        <div className={styles["warm-up-rhs"] + ' section-banners'}>
           {/* <img src={WarmUpBanner} alt="" /> */}
         </div>
       </section>
 
       <section className="attention">
-        <AttentionCarousel/>
+        <div className="section-details flexbox carousel-details">
+          <div className="section-details-lhs">
+            <div className="mini-heading">For the skin</div>
+            <h2 className="sections-tagline">Attention for all types</h2>
+          </div>
+          <div className="section-details-rhs">
+            <div className="sections-description">
+              The well-being of your skin is the product of hydration,
+              nourishment, and protection through discerning rituals. Explore
+              requisite skin care for all skin types.
+            </div>
+            <a href="" className="sections-cta">
+              <div className="soaps-text">See all Skin Care</div>
+              <img src={ArrowRightIcon} alt="" className="soaps-cta-icon" />
+            </a>
+          </div>
+        </div>
+        <AttentionCarousel />
       </section>
-      {/* <ProductCarousel /> */}
+      
+      <Sustainablility/>
+      <Domestic/>
+      <StoreLocator/>
+      <Quote/>
+      <Footer/>
     </>
   );
 }

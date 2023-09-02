@@ -1,0 +1,16 @@
+.sustainability{
+    display: flex;
+}
+
+.sustainability-banner{
+    background: url("../../../../assets/sustain.avif") no-repeat center;
+}
+
+
+/*  Media Queries  */
+
+@media screen and (max-width: 1024px) {
+    .sustainability{
+     flex-direction: column;
+    }
+  }

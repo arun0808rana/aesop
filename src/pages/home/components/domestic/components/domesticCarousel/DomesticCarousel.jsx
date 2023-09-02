@@ -1,7 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import ArrowRightIcon from "../../../../assets/arrow-right.svg";
-
+import ArrowRightIcon from "../../../../../../assets/arrow-right.svg";
 
 const responsive = {
   superLargeDesktop: {
@@ -23,38 +22,32 @@ const responsive = {
   },
 };
 
-import FacialCream from "../../../../assets/facia_cream.webp";
-import FacialConcentrate from "../../../../assets/facial_concentrate.png";
-import NutFacial from "../../../../assets/nut_facial.webp";
+import PostPooDropsImage from "../../../../../../assets/poo_drops.avif";
+import Aganice from "../../../../../../assets/aganice.webp";
+import useWindowDimensions from "../../../../../../hooks/useWindowDimensions";
 
-import useWindowDimensions from "../../../../hooks/useWindowDimensions";
-
-export function AttentionCarousel() {
-  const {  width } = useWindowDimensions();
+export function DomesticCarousel() {
+  const { width } = useWindowDimensions();
   return (
-    <div className="attention-carousel">
+    <div className="domestic-carousel">
       <Carousel responsive={responsive}>
         {width > 1024 ? (
           <div className="section-details">
-            <div className="mini-heading">For the skin</div>
-            <h2 className="sections-tagline">Attention for all types</h2>
+            <div className="mini-heading">For the home</div>
+            <h2 className="sections-tagline">Domestic pleasures</h2>
             <div className="sections-description">
-              The well-being of your skin is the product of hydration,
-              nourishment, and protection through discerning rituals. Explore
-              requisite skin care for all skin types.
+              Our range of aromatic formulations for the home are practical and
+              pleasing in equal measure.
             </div>
             <a href="" className="sections-cta">
-              <div className="soaps-text">See all Skin Care</div>
+              <div className="soaps-text">See all Home</div>
               <img src={ArrowRightIcon} alt="" className="soaps-cta-icon" />
             </a>
           </div>
         ) : null}
 
         <div className="attention-carousel-item">
-          <img
-            src={FacialConcentrate}
-            className='section-carousel-images'
-          />
+          <img src={Aganice} className="section-carousel-images" />
           <div className="attention-item-name">Lucent Facial Concentrate</div>
           <div className="attention-item-description">
             A vitamin-c rich layer serum
@@ -62,10 +55,7 @@ export function AttentionCarousel() {
         </div>
 
         <div className="attention-carousel-item">
-          <img
-            src={FacialCream}
-            className='section-carousel-images'
-          />
+          <img src={PostPooDropsImage} className="section-carousel-images" />
           <div className="attention-item-name">
             Purifying Facial Cream Cleanser
           </div>
@@ -75,10 +65,7 @@ export function AttentionCarousel() {
         </div>
 
         <div className="attention-carousel-item">
-          <img
-            src={NutFacial}
-            className='section-carousel-images'
-          />
+          <img src={Aganice} className="section-carousel-images" />
           <div className="attention-item-name">
             Camellia Nut Facial Hydrating Cream
           </div>
@@ -88,10 +75,7 @@ export function AttentionCarousel() {
         </div>
 
         <div className="attention-carousel-item">
-          <img
-            src={FacialConcentrate}
-            className='section-carousel-images'
-          />
+          <img src={Aganice} className="section-carousel-images" />
           <div className="attention-item-name">Lucent Facial Concentrate</div>
           <div className="attention-item-description">
             A vitamin-c rich layer serum
@@ -99,13 +83,12 @@ export function AttentionCarousel() {
         </div>
 
         <div className="attention-carousel-item">
-          <img
-            src={FacialConcentrate}
-            className='section-carousel-images'
-          />
-          <div className="attention-item-name">Lucent Facial Concentrate</div>
+          <img src={Aganice} className="section-carousel-images" />
+          <div className="attention-item-name">
+            Camellia Nut Facial Hydrating Cream
+          </div>
           <div className="attention-item-description">
-            A vitamin-c rich layer serum
+            For normal dry or sensitive skin
           </div>
         </div>
       </Carousel>

@@ -49,16 +49,28 @@
   font-weight: normal;
 }
 
-
-
-.warm-up{
+.warm-up {
   display: flex;
   justify-content: space-between;
 }
 
-.warm-up-rhs{
-  width: 60%;
-  height: 50vh;
-  background-size: cover;
-  background:url("../../assets/warmup.jpg") no-repeat center;
+.warm-up-rhs {
+  background: url("../../assets/warmup.jpg") no-repeat center;
+}
+
+/*  Media Queries  */
+
+@media screen and (max-width: 1024px) {
+  .warm-up {
+    flex-direction: column;
+  }
+
+  .warm-up-rhs{
+    width: calc(100% - 40px);
+    margin-left: 40px;
+  }
+
+  .warm-up-details {
+    max-width: 70%;
+  }
 }

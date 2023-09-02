@@ -1,0 +1,15 @@
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 160px;
+  color: #333333;
+}
+
+/*  Media Queries  */
+
+@media screen and (min-width: 640px) {
+  .quote-text {
+    max-width: 50%;
+  }
+}
