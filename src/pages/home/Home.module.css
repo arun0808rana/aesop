@@ -1,3 +1,40 @@
+.video-consultation-banner {
+  background-color: #c2c2af;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.video-consultation-banner > a {
+  font-size: 14px;
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.video-consultation-banner > a:hover {
+  text-decoration: underline;
+}
+
+.second-consultaion-banner {
+  background-color: #252525;
+  display: block;
+  color: #fffef2;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.second-consultaion-banner:hover {
+  text-decoration: underline;
+}
+
+.plus-icon {
+  margin-left: 20px;
+  font-size: 24px;
+}
+
 .introduction {
   background: url("../../assets/Aesop_Bar_Soaps_2023_Web_Homepage_2_Primary_Full_Bleed_Desktop_2880x1044px.avif")
     no-repeat center;
@@ -58,6 +95,14 @@
   background: url("../../assets/warmup.jpg") no-repeat center;
 }
 
+/* Mobile */
+
+.mobile-introduction-details {
+  background-color: #333;
+  margin-top: 0;
+  padding: 40px 20px;
+}
+
 /*  Media Queries  */
 
 @media screen and (max-width: 1024px) {
@@ -65,12 +110,23 @@
     flex-direction: column;
   }
 
-  .warm-up-rhs{
+  .warm-up-rhs {
     width: calc(100% - 40px);
     margin-left: 40px;
   }
 
   .warm-up-details {
     max-width: 70%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .warm-up-details {
+    margin-bottom: 30px;
+  }
+
+  .warm-up-rhs{
+    margin-left: 20px;
   }
 }

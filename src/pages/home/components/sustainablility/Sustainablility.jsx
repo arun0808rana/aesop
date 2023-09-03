@@ -8,7 +8,7 @@ export function Sustainablility() {
       <div
         className={styles["sustainability-banner"] + " section-banners"}
       ></div>
-      <div className="section-details">
+      <div className="poo-drop section-details">
         <div className="section-details-lhs">
           <h2 className="sections-tagline">Post-Poo Drops has returned</h2>
         </div>

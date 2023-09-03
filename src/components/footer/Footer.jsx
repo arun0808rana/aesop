@@ -121,25 +121,44 @@ export function Footer() {
               <div className="separator"></div>
               <a href="" className={styles["site-link"]}>
                 <div className="site-link-text">Our Story</div>
-                <img src={ArrowRightIcon} alt="" className="site-link-icon" />
               </a>
               <a href="" className={styles["site-link"]}>
                 <div className="site-link-text">Foundation</div>
-                <img src={ArrowRightIcon} alt="" className="site-link-icon" />
               </a>
               <a href="" className={styles["site-link"]}>
                 <div className="site-link-text">Careers</div>
-                <img src={ArrowRightIcon} alt="" className="site-link-icon" />
               </a>
               <a href="" className={styles["site-link"]}>
                 <div className="site-link-text">Privacy Policy</div>
-                <img src={ArrowRightIcon} alt="" className="site-link-icon" />
               </a>
               <a href="" className={styles["site-link"]}>
                 <div className="site-link-text">Accessibility</div>
               </a>{" "}
               <a href="" className={styles["site-link"]}>
                 <div className="site-link-text">Cookie Policy</div>
+              </a>
+            </div>
+
+            <div className={styles["site-link-container"]}>
+              <div className="site-link-heading">Social Media</div>
+              <div className="separator"></div>
+              <a href="" className={styles["site-link"]}>
+                <div className="site-link-text">Instagram</div>
+                <img src={ArrowRightIcon} alt="" className="site-link-icon" />
+              </a>
+              <a href="" className={styles["site-link"]}>
+                <div className="site-link-text">Twitter</div>
+                <img src={ArrowRightIcon} alt="" className="site-link-icon" />
+              </a>
+              <a href="" className={styles["site-link"]}>
+                <div className="site-link-text">LinkedIn</div>
+                <img src={ArrowRightIcon} alt="" className="site-link-icon" />
+              </a>
+              <a href="" className={styles["site-link"]}>
+                <div className="site-link-text">WeChat</div>
+              </a>
+              <a href="" className={styles["site-link"]}>
+                <div className="site-link-text">Weibo</div>
               </a>
             </div>
           </div>

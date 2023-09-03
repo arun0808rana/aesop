@@ -1,4 +1,3 @@
-import ProductCarousel from "../../components/ProductCarousel";
 import { Header } from "../../components/header/Header";
 import styles from "./Home.module.css";
 import ArrowRightIcon from "../../assets/arrow-right.svg";
@@ -11,10 +10,23 @@ import { Sustainablility } from "./components/sustainablility/Sustainablility";
 import { StoreLocator } from "./components/storeLocator/StoreLocator";
 import { Quote } from "./components/quote/Quote";
 import { Footer } from "../../components/footer/Footer";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 export default function Home() {
+  const {width} = useWindowDimensions();
   return (
     <>
+      <div className="top-banners">
+        <div className={styles["video-consultation-banner"]}>
+          Trained Aesop consultations are available to provide bespoke skin care
+          advise. <a href="">Book a video consultation</a>
+        </div>
+        <a href="" className={styles["second-consultaion-banner"]}>
+          Click and Collect is now available at Hong Kong stores. Enjoy
+          complimentary shipping on orders over HK$400{" "}
+          <span className={styles["plus-icon"]}>+</span>
+        </a>
+      </div>
       <Header />
       <section className={styles["introduction"]}>
         <h2 className={styles["brands-name"]}>Aesop</h2>
@@ -26,7 +38,7 @@ export default function Home() {
           <div className="excerpt">
             Breathing new life into the humble bar soap are Nurture, Polish and
             Refresh—three additions to the range, each imparting a unique
-            constellation of benefits. 
+            constellation of benefits.
           </div>
           <a className={styles["cta"]}>
             <div className={styles["cta-text"]}>Discover Bar Soaps</div>
@@ -43,6 +55,41 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {width < 641 ? (
+        <section className={styles["mobile-introduction-details"]}>
+          <div className="mobile section-details">
+            <div className="mobile section-details-flexbox">
+              <div className="mobile section-details-lhs">
+                <div className="mobile mini-heading">Bar Soaps</div>
+                <h2 className="mobile sections-tagline">
+                  A body care classic, reimagined
+                </h2>
+              </div>
+              <div className={styles["section-details-rhs"]}>
+                <div className="mobile sections-description">
+                  Breathing new life into the humble bar soap are Nurture,
+                  Polish and Refresh—three additions to the range, each
+                  imparting a unique constellation of benefits.
+                </div>
+                <a className={styles["cta"]}>
+                  <div className={styles["cta-text"]}>Discover Bar Soaps</div>
+                  {/* <img src={ArrowRightIcon} className={styles["cta-arrow"]} /> */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="current"
+                    viewBox="0 0 256 256"
+                  >
+                    <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className={styles["soaps-container"]}>
         <div className="section-details">
@@ -77,7 +124,7 @@ export default function Home() {
           </div>
           <SubCta subCtaText={"Read More"} />
         </div>
-        <div className={styles["warm-up-rhs"] + ' section-banners'}>
+        <div className={styles["warm-up-rhs"] + " section-banners"}>
           {/* <img src={WarmUpBanner} alt="" /> */}
         </div>
       </section>
@@ -102,12 +149,12 @@ export default function Home() {
         </div>
         <AttentionCarousel />
       </section>
-      
-      <Sustainablility/>
-      <Domestic/>
-      <StoreLocator/>
-      <Quote/>
-      <Footer/>
+
+      <Sustainablility />
+      <Domestic />
+      <StoreLocator />
+      <Quote />
+      <Footer />
     </>
   );
 }

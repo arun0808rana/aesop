@@ -5,6 +5,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fffef2;
+  overflow-x: hidden;
+  width: 100%;
 }
 * {
   box-sizing: border-box;
@@ -89,21 +91,21 @@ section {
   align-items: center;
 }
 
-.section-carousel-images{
+.section-carousel-images {
   max-width: 400px;
 }
 
-.section-carousel-images-quirk{
+.section-carousel-images-quirk {
   max-width: 100%;
 }
 
-blockquote{
+blockquote {
   font-family: "Marcellus", serif;
   text-align: center;
   font-size: 1.875rem;
 }
 
-cite{
+cite {
   font-size: 14px;
   font-family: "Be Vietnam Pro", sans-serif;
   text-align: center;
@@ -112,12 +114,14 @@ cite{
   font-weight: 500;
 }
 
-::-webkit-input-placeholder { /* Edge */
+::-webkit-input-placeholder {
+  /* Edge */
   color: #fffef2;
   font-size: 16px;
 }
 
-:-ms-input-placeholder { /* Internet Explorer */
+:-ms-input-placeholder {
+  /* Internet Explorer */
   color: #fffef2;
   font-size: 16px;
 }
@@ -127,16 +131,18 @@ cite{
   font-size: 16px;
 }
 
-.separator{
+.separator {
   border-bottom: 1px solid #fffef2;
   width: 100%;
   margin: 16px 0;
 }
+
 /*  Media Queries  */
 
 @media screen and (max-width: 1024px) {
   .section-details {
     max-width: 1024px;
+    margin-bottom: 30px;
   }
 
   .section-details-lhs {
@@ -148,9 +154,13 @@ cite{
     flex-direction: row;
   }
 
-  .section-banners{
+  .section-banners {
     width: calc(100% - 60px);
     margin-left: 60px;
+  }
+
+  .poo-drop.section-details {
+    margin-top: 30px;
   }
 }
 
@@ -158,21 +168,61 @@ cite{
   .section-details.carousel-details {
     display: none;
   }
+  .mobile-links{
+    display: none;
+  }
 }
 
+@media screen and (max-width: 640px) {
+  section {
+    margin-top: 80px;
+  }
+  .section-details-flexbox {
+    flex-direction: column;
+  }
+
+  .section-details {
+    padding-left: 20px;
+  }
+
+  .mobile.section-details {
+    padding-left: 0;
+  }
+
+  .section-details.flexbox {
+    flex-direction: column;
+  }
+
+  .mobile.mini-heading,
+  .mobile.sections-description,
+  .mobile.sections-cta,
+  .mobile.sections-tagline {
+    color: #fffef2;
+  }
+
+  .section-banners{
+    margin-left: 20px;
+  }
+}
+
+@media  (min-width: 640px) and (max-width: 1024px) {
+  .desktop-links{
+    display: none;
+  }
+}
 
 /*  Carousel flex fix */
 /* 
   carousel css collides with the scoped css, therefore global css required
 */
 
-.store-locator{
+.store-locator {
   display: flex;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 1024px) {
-  .store-locator{
-   flex-direction: column;
+  .store-locator {
+    flex-direction: column;
   }
 }
