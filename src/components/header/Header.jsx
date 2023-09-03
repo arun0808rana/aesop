@@ -9,7 +9,7 @@ export function Header() {
 
   return (
     <header>
-      {width > 641 ? (
+      {width > 640 ? (
         <div className={styles["desktop-header"]}>
           <div className={styles["desktop-header-lhs"]}>
             <a href="#" className={styles["links"] + " desktop-links"}>

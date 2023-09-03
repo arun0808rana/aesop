@@ -137,6 +137,23 @@ cite {
   margin: 16px 0;
 }
 
+.attention-item-name {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.attention-carousel-item:hover{
+  cursor: pointer;
+}
+.attention-carousel-item:hover .attention-item-name{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.attention-item-description{
+  font-size: 14px;
+}
 /*  Media Queries  */
 
 @media screen and (max-width: 1024px) {
@@ -168,7 +185,7 @@ cite {
   .section-details.carousel-details {
     display: none;
   }
-  .mobile-links{
+  .mobile-links {
     display: none;
   }
 }
@@ -200,13 +217,13 @@ cite {
     color: #fffef2;
   }
 
-  .section-banners{
+  .section-banners {
     margin-left: 20px;
   }
 }
 
-@media  (min-width: 640px) and (max-width: 1024px) {
-  .desktop-links{
+@media (min-width: 640px) and (max-width: 1024px) {
+  .desktop-links {
     display: none;
   }
 }

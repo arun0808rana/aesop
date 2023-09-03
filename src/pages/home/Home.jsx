@@ -13,7 +13,7 @@ import { Footer } from "../../components/footer/Footer";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 export default function Home() {
-  const {width} = useWindowDimensions();
+  const { width } = useWindowDimensions();
   return (
     <>
       <div className="top-banners">
@@ -29,31 +29,35 @@ export default function Home() {
       </div>
       <Header />
       <section className={styles["introduction"]}>
-        <h2 className={styles["brands-name"]}>Aesop</h2>
-        <div className={styles["brand-details"]}>
-          <div className="bar-soaps">Bar Soaps</div>
-          <h2 className={styles["tagline"]}>
-            A body care classic, reimagined{" "}
-          </h2>
-          <div className="excerpt">
-            Breathing new life into the humble bar soap are Nurture, Polish and
-            Refresh—three additions to the range, each imparting a unique
-            constellation of benefits.
-          </div>
-          <a className={styles["cta"]}>
-            <div className={styles["cta-text"]}>Discover Bar Soaps</div>
-            {/* <img src={ArrowRightIcon} className={styles["cta-arrow"]} /> */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="current"
-              viewBox="0 0 256 256"
-            >
-              <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
-            </svg>
-          </a>
-        </div>
+        {width > 640 ? (
+          <>
+            <h2 className={styles["brands-name"]}>Aesop</h2>
+            <div className={styles["brand-details"]}>
+              <div className="bar-soaps">Bar Soaps</div>
+              <h2 className={styles["tagline"]}>
+                A body care classic, reimagined{" "}
+              </h2>
+              <div className="excerpt">
+                Breathing new life into the humble bar soap are Nurture, Polish
+                and Refresh—three additions to the range, each imparting a
+                unique constellation of benefits.
+              </div>
+              <a className={styles["cta"]}>
+                <div className={styles["cta-text"]}>Discover Bar Soaps</div>
+                {/* <img src={ArrowRightIcon} className={styles["cta-arrow"]} /> */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="current"
+                  viewBox="0 0 256 256"
+                >
+                  <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+                </svg>
+              </a>
+            </div>
+          </>
+        ) : null}
       </section>
 
       {width < 641 ? (

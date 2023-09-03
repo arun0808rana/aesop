@@ -1,16 +1,26 @@
-.sustainability{
-    display: flex;
+.sustainability {
+  display: flex;
 }
 
-.sustainability-banner{
-    background: url("../../../../assets/sustain.avif") no-repeat center;
+.sustainability-banner {
+  background-position: center;
+  background-image: url("../../../../assets/sustain.avif");
+  background-size: cover;
+  height: calc(100vw / 1.7);
+  margin-left: 0;
 }
-
 
 /*  Media Queries  */
 
 @media screen and (max-width: 1024px) {
-    .sustainability{
-     flex-direction: column;
+  .sustainability {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .sustainability-banner {
+        height: calc(60vw / 1.7);
     }
   }
