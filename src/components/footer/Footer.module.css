@@ -71,7 +71,7 @@
 
 .sustainability-excerpt {
   margin-right: 35px;
-  margin-top: 35px;
+  /* margin-top: 40%; */
 }
 
 .site-link > img {
@@ -112,6 +112,10 @@
   cursor: pointer;
 }
 
+.email-wrapper {
+  min-height: 306px;
+}
+
 /*  Media Queries  */
 
 @media screen and (max-width: 1024px) {
@@ -139,6 +143,10 @@
 
   .footer-base {
     width: 100%;
+  }
+
+  .email-wrapper {
+    min-height: fit-content;
   }
 }
 

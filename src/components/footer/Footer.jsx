@@ -3,10 +3,10 @@ import styles from "./Footer.module.css";
 import { Checkbox } from "../checkbox/Checkbox";
 import { SustainabilityExcerpt } from "./SustainabilityExcerpt";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import InstagramLogo from '@assets/instagram-logo.svg';
-import TwitterLogo from '@assets/twitter-logo.svg';
-import LinkedinLogo from '@assets/linkedin-logo.svg';
-import ChatIcon from '@assets/chat-fill.svg';
+import InstagramLogo from "@assets/instagram-logo.svg";
+import TwitterLogo from "@assets/twitter-logo.svg";
+import LinkedinLogo from "@assets/linkedin-logo.svg";
+import ChatIcon from "@assets/chat-fill.svg";
 
 export function Footer() {
   const { width } = useWindowDimensions();
@@ -15,17 +15,19 @@ export function Footer() {
     <footer>
       <div className={styles["footer-top"]}>
         <form className={styles["email-container"]}>
-          <h2 className={styles["email-heading"]}>
-            Subscribe to Aesop communications
-          </h2>
-          <div className={styles["email-box"]}>
-            <input type="email" placeholder="Email Address" />
-            <a className={styles["email-box-icon"]}>
-              <img src={ArrowRightIcon} />
-            </a>
-          </div>
-          <div className="subscribe-checkbox">
-            <Checkbox />
+          <div className={styles["email-wrapper"]}>
+            <h2 className={styles["email-heading"]}>
+              Subscribe to Aesop communications
+            </h2>
+            <div className={styles["email-box"]}>
+              <input type="email" placeholder="Email Address" />
+              <a className={styles["email-box-icon"]}>
+                <img src={ArrowRightIcon} />
+              </a>
+            </div>
+            <div className="subscribe-checkbox">
+              <Checkbox />
+            </div>
           </div>
           {width > 1024 ? <SustainabilityExcerpt /> : null}
         </form>
